@@ -75,10 +75,34 @@
 
             <p>Tem um projeto em mente? Entre em contato</p>
 
-            <address>
-                E-mail: <a href="mailto:info2.kock@gmail.com">info2.kock@gmail.com</a> <br>
-                Telefone: <a href="tel:+55 (00) 00000-0000">(00) 00000-0000</a>
-            </address>
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select> <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea> <br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label> <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
+
         </section>
     </footer>
 </body>
